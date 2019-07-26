@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <form name="example">
+num1:<input type="number" size="20" id="number" name="number1"><br>
+
+num2:<input type="number" size="20" id="number" name="number2"><br>
+<input type="button" value="MULTIPLICATION" onclick="multi()"><br>
+<input type="button" value="Addition" onclick="add()"><br>
+<input type="button" value="subtract" onclick="sub()"><br>
+<input type="button" value="division" onclick="div()">
+</form>
+        <script>
+function multi()
+{
+    var b=document.example.number1.value;
+    var c=document.example.number2.value;
+    document.write(b*c);
+
+    }
+function add()
+{
+    var b=parseInt(document.example.number1.value,10);
+    var c=parseInt(document.example.number2.value,10)
+    var d=b+c;
+
+    document.write(d);
+    
+    }
+function sub()
+{
+    var b=document.example.number1.value;
+    var c=document.example.number2.value;
+    document.write(b-c);
+    
+    }
+function div()
+{
+    var b=document.example.number1.value;
+    var c=document.example.number2.value;
+    document.write(b/c);
+    
+    }
+
+
+
+    </script>
+</form>
+</body>
+</html>
